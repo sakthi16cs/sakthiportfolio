@@ -24,7 +24,7 @@ export const SplineLoader = () => (
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute inset-0 bg-white/40 rounded-full blur-2xl"
+        className="absolute inset-0 bg-accent/20 rounded-full blur-2xl"
       />
       
       {/* Stylized Corners */}
@@ -73,7 +73,7 @@ export const SplineLoader = () => (
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute left-0 right-0 from-transparent via-accent to-transparent z-10"
+        className="absolute left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-accent to-transparent z-10"
       />
     </div>
     
@@ -83,8 +83,8 @@ export const SplineLoader = () => (
       transition={{ delay: 0.8 }}
       className="mt-8 flex flex-col items-center gap-3"
     >
-      <span className="text-[10px] font-mono uppercase tracking-[0.4em] text-white/60">Syncing Intelligence</span>
-      <div className="w-32 h-[2px] bg-white/10 relative overflow-hidden rounded-full">
+      <span className="text-[10px] font-mono uppercase tracking-[0.4em] text-white/30">Syncing Intelligence</span>
+      <div className="w-32 h-[2px] bg-white/5 relative overflow-hidden rounded-full">
         <motion.div
           animate={{
             left: ['-100%', '100%'],
@@ -94,7 +94,7 @@ export const SplineLoader = () => (
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute inset-0 w-1/2 from-transparent via-accent to-transparent"
+          className="absolute inset-0 w-1/2 bg-gradient-to-r from-transparent via-accent to-transparent"
         />
       </div>
     </motion.div>

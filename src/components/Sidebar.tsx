@@ -16,25 +16,48 @@ export default function Sidebar() {
   ];
 
   return (
-    <motion.div 
-      initial={{ opacity: 0, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 1, duration: 1 }}
-      className="fixed left-4 md:left-8 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-8 items-center"
-    >
-      <div className="w-[1px] h-20 bg-white/20" />
-      {socials.map((social, i) => (
-        <a 
-          key={i} 
-          href={social.link} 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 rounded-full border border-transparent hover:border-white hover:bg-white opacity-40 hover:opacity-100 hover:text-accent transition-all duration-300 cursor-target"
-        >
-          <social.icon className="w-5 h-5" />
-        </a>
-      ))}
-      <div className="w-[1px] h-20 bg-white/20" />
-    </motion.div>
+    <>
+      {/* Desktop Sidebar */}
+      <motion.div 
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="fixed left-8 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-8 items-center"
+      >
+        <div className="w-[1px] h-20 bg-white/20" />
+        {socials.map((social, i) => (
+          <a 
+            key={i} 
+            href={social.link} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full border border-transparent hover:border-white hover:bg-white opacity-40 hover:opacity-100 hover:text-accent transition-all duration-300 cursor-target"
+          >
+            <social.icon className="w-5 h-5" />
+          </a>
+        ))}
+        <div className="w-[1px] h-20 bg-white/20" />
+      </motion.div>
+
+      {/* Mobile Bottom Sidebar */}
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="fixed bottom-0 left-0 w-full z-[48] flex md:hidden items-center justify-center gap-8 py-6 px-4 bg-gradient-to-t from-black to-transparent"
+      >
+        {socials.map((social, i) => (
+          <a 
+            key={i} 
+            href={social.link} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="opacity-40 hover:opacity-100 transition-opacity p-2 cursor-target"
+          >
+            <social.icon className="w-6 h-6" />
+          </a>
+        ))}
+      </motion.div>
+    </>
   );
 }
