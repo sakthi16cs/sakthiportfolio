@@ -1,0 +1,8 @@
+{
+  "name": "Moncy Portfolio",
+  "description": "High-end 3D developer portfolio with immersive storytelling and cinematic interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
