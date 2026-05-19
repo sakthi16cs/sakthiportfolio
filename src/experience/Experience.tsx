@@ -6,7 +6,7 @@ import Galaxy from '@/components/ui/Galaxy';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Experience() {
+export default function Experience({ onReady }: { onReady?: () => void }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const splineRef = useRef<HTMLDivElement>(null);
   const splineApp = useRef<any>(null);
@@ -94,6 +94,7 @@ export default function Experience() {
     if (app.canvas) {
       app.canvas.style.pointerEvents = 'auto';
     }
+    if (onReady) onReady();
   };
 
   if (hasError) {

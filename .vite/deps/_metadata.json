@@ -1,0 +1,91 @@
+{
+  "hash": "21b922a0",
+  "configHash": "2778e1f1",
+  "lockfileHash": "2a605983",
+  "browserHash": "ec18021c",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "8214befb",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "698f8372",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "edf15057",
+      "needsInterop": true
+    },
+    "motion/react": {
+      "src": "../../node_modules/motion/dist/es/react.mjs",
+      "file": "motion_react.js",
+      "fileHash": "4011b794",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "11b057e0",
+      "needsInterop": false
+    },
+    "@splinetool/react-spline": {
+      "src": "../../node_modules/@splinetool/react-spline/dist/react-spline.js",
+      "file": "@splinetool_react-spline.js",
+      "fileHash": "f340e7b6",
+      "needsInterop": false
+    },
+    "gsap": {
+      "src": "../../node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "2cf26735",
+      "needsInterop": false
+    },
+    "gsap/ScrollTrigger": {
+      "src": "../../node_modules/gsap/ScrollTrigger.js",
+      "file": "gsap_ScrollTrigger.js",
+      "fileHash": "51b6f224",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "navmesh-6CAZDJL2": {
+      "file": "navmesh-6CAZDJL2.js"
+    },
+    "physics-BKI4QSAE": {
+      "file": "physics-BKI4QSAE.js"
+    },
+    "process-6LVA7AJF": {
+      "file": "process-6LVA7AJF.js"
+    },
+    "boolean-6GN5QS5E": {
+      "file": "boolean-6GN5QS5E.js"
+    },
+    "howler-BZW7Y3HP": {
+      "file": "howler-BZW7Y3HP.js"
+    },
+    "opentype-F233DBWP": {
+      "file": "opentype-F233DBWP.js"
+    },
+    "ui-Z4VWNU2X": {
+      "file": "ui-Z4VWNU2X.js"
+    },
+    "gaussian-splat-compression-G7GIHQ7I": {
+      "file": "gaussian-splat-compression-G7GIHQ7I.js"
+    },
+    "chunk-J2QUVTXK": {
+      "file": "chunk-J2QUVTXK.js"
+    },
+    "chunk-PDNHVAOE": {
+      "file": "chunk-PDNHVAOE.js"
+    },
+    "chunk-2TUXWMP5": {
+      "file": "chunk-2TUXWMP5.js"
+    }
+  }
+}

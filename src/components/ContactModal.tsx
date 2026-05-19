@@ -130,7 +130,7 @@ export default function ContactModal({ children }: { children: React.ReactNode }
             <button
               disabled={isSubmitting}
               type="submit"
-              className="w-full py-4 rounded-xl bg-accent text-black font-mono text-xs uppercase tracking-[0.2em] font-bold hover:brightness-110 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 cursor-target"
+              className="w-full py-4 rounded-xl bg-white/30 text-white font-mono text-xs uppercase tracking-[0.2em] font-bold hover:brightness-110 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 cursor-target"
             >
               {isSubmitting ? (
                 <>
@@ -153,7 +153,7 @@ export default function ContactModal({ children }: { children: React.ReactNode }
                   exit={{ opacity: 0 }}
                   className="text-xs text-green-400 text-center font-mono"
                 >
-                  Message sent successfully!
+                  Message sent successfully! Thank you.
                 </motion.p>
               )}
               {status === 'error' && (
